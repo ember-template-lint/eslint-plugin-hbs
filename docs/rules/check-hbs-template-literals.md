@@ -1,4 +1,4 @@
-# If you see some hbs`&lt;h1&gt;handlebars templates&lt;/h1&gt;`, pass it through a linter. (check-hbs-template-literals)
+# If you see some hbs`<h1>handlebars template</h1>`, pass it through a linter. (check-hbs-template-literals)
 
 If you're using [ember-inline-component](https://github.com/knownasilya/ember-inline-component), you're obviously trying
 to push the envelope in what Ember an do and to cut down on the number of files you're trying to deal with at any given
