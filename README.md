@@ -41,6 +41,11 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
+The plugin will report the number of errors and the first line of the first error. Here's a running example. Left-hand side is the output of `eslint` from the command-line, right-hand side is `vim` running with `eslint` (via syntastic):
+
+
+![Example of in-use](https://cl.ly/2K2y2i3g0x3d/download/Screen%20Recording%202017-09-05%20at%2011.09%20AM.gif)
+
 ## Supported Rules
 
 * Fill in provided rules here
