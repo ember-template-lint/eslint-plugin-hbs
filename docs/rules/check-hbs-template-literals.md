@@ -37,12 +37,26 @@ Examples of **correct** code for this rule:
 
 ### Options
 
-None
+This project uses configuration files for
+[ember-template-lint](https://github.com/rwjblue/ember-template-lint), which
+uses a `.template-lintrc.js` configuration file at the base of your project.
+For example: 
+
+```javascript
+module.exports = {
+  extends: 'recommended',
+
+  rules: {
+    'bare-strings': true
+  }
+}
+```
 
 ## When Not To Use It
 
-If you're not using inline templates
+If you're not using inline handlebars templates
 
 ## Further Reading
 
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+ - [ember-inline-component](https://github.com/knownasilya/ember-inline-component/blob/master/README.md)
+ - [ember-template-lint](https://github.com/rwjblue/ember-template-lint/blob/master/README.md)
