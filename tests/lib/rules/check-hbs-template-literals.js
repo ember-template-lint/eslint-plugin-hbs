@@ -33,7 +33,8 @@ ruleTester.run('check-hbs-template-literals', rule, {
         key='hitRatio'
         metric='hit_ratio'
         unit='percent' as |metadata mean|}}thing{{/fui-graph}}\``,
-    'hbs`{{#if foo}}<h1>Foo!</h1>{{else}}<h1>not foo</h1>{{/if}}`'
+    'hbs`{{#if foo}}<h1>Foo!</h1>{{else}}<h1>not foo</h1>{{/if}}`',
+    '`${someVariable} in a string which is not hbs`'
   ],
 
   invalid: [
@@ -42,7 +43,7 @@ ruleTester.run('check-hbs-template-literals', rule, {
       errors: [
         {
           message: 'Handlebars template literal: 1 error(s)',
-          type: 'TemplateLiteral'
+          type: 'TaggedTemplateExpression'
         }
       ]
     }
