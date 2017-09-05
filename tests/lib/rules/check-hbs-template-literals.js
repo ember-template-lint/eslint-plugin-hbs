@@ -42,7 +42,7 @@ ruleTester.run('check-hbs-template-literals', rule, {
       errors: [
         {
           message: 'Handlebars template literal: 1 error(s)',
-          type: 'ExpressionStatement'
+          type: 'TemplateLiteral'
         }
       ]
     }
