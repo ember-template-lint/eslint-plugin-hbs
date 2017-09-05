@@ -34,7 +34,14 @@ ruleTester.run('check-hbs-template-literals', rule, {
         metric='hit_ratio'
         unit='percent' as |metadata mean|}}thing{{/fui-graph}}\``,
     'hbs`{{#if foo}}<h1>Foo!</h1>{{else}}<h1>not foo</h1>{{/if}}`',
-    '`${someVariable} in a string which is not hbs`'
+    '`${someVariable} in a string which is not hbs`',
+    `hbs\`
+      <div class='content-box spaced card--error-message'>
+        <h3 class='spaced'>Real-time Stats</h3>
+        {{form-message message=message}}
+      </div>
+    \``,
+
   ],
 
   invalid: [
@@ -42,7 +49,7 @@ ruleTester.run('check-hbs-template-literals', rule, {
       code: 'hbs`{{does not pass linting`',
       errors: [
         {
-          message: 'Handlebars template literal: 1 error(s)',
+          message: '1 error(s): Parse error on line 1:',
           type: 'TaggedTemplateExpression'
         }
       ]
