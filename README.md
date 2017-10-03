@@ -35,10 +35,21 @@ Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "hbs/rule-name": 2
-    }
+  "rules": {
+      'hbs/check-hbs-template-literals': 2
+  }
 }
+```
+
+or
+
+```
+  "rules": {
+    'hbs/check-hbs-template-literals': [
+      'error', 2,
+      {'ConfigFile': __dirname + '/.eslint-template-lintrc.json'}
+    ],
+  }
 ```
 
 The plugin will report the number of errors and the first line of the first error. Here's a running example. Left-hand side is the output of `eslint` from the command-line, right-hand side is `vim` running with `eslint` (via syntastic):
