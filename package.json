@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-hbs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Provide linting for hbs template literals inside of JavaScript",
   "keywords": [
     "eslint",
