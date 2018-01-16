@@ -36,7 +36,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-      'hbs/check-hbs-template-literals': 2
+      "hbs/check-hbs-template-literals": 2
   }
 }
 ```
