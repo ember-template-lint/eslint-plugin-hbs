@@ -9,6 +9,7 @@
   ],
   "author": "Peter Banka",
   "main": "lib/index.js",
+  "repository": "psbanka/eslint-plugin-hbs",
   "scripts": {
     "test": "mocha tests --recursive"
   },
