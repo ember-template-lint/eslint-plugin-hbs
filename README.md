@@ -1,6 +1,8 @@
 # eslint-plugin-hbs
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/psbanka/eslint-plugin-hbs.svg)](https://greenkeeper.io/)
+[![npm version](https://badge.fury.io/js/eslint-plugin-hbs.svg)](https://badge.fury.io/js/eslint-plugin-hbs)
+[![Build Status](https://travis-ci.org/psbanka/eslint-plugin-hbs.svg?branch=master)](https://travis-ci.org/psbanka/eslint-plugin-hbs)
 
 Provide linting for hbs template literals inside of JavaScript
 
