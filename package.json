@@ -14,11 +14,11 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "requireindex": "~1.2.0",
-    "ember-template-lint": "^0.8.7"
+    "requireindex": "^1.2.0",
+    "ember-template-lint": "^0.8.15"
   },
   "devDependencies": {
-    "eslint": "~4.19.1",
+    "eslint": "^4.19.1",
     "mocha": "^5.0.5"
   },
   "engines": {
