@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-hbs",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Provide linting for hbs template literals inside of JavaScript",
   "keywords": [
     "eslint",
@@ -14,10 +14,13 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "requireindex": "^1.2.0",
+    "requireindex": "^1.2.0"
+  },
+  "peerDependencies": {
     "ember-template-lint": "^1.5.3"
   },
   "devDependencies": {
+    "ember-template-lint": "^1.5.3",
     "eslint": "^6.2.1",
     "mocha": "^6.2.0"
   },
